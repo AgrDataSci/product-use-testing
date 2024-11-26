@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 Data analysis | Product Use Testing in Agriculture</title>
+  <meta name="description" content="A guide to perform user-centred testing in agriculture." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 Data analysis | Product Use Testing in Agriculture" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A guide to perform user-centred testing in agriculture." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 Data analysis | Product Use Testing in Agriculture" />
+  
+  <meta name="twitter:description" content="A guide to perform user-centred testing in agriculture." />
+  
+
+<meta name="author" content="" />
+
+
+<meta name="date" content="2024-11-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="feedback-and-dissemination.html"/>
+<link rel="next" href="stories.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html"><i class="fa fa-check"></i><b>2</b> Introduction to the tricot approach</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#the-10-steps-of-a-tricot-experiment"><i class="fa fa-check"></i><b>2.1</b> The 10 steps of a tricot experiment</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-1-preparation"><i class="fa fa-check"></i><b>2.1.1</b> Step 1: Preparation</a></li>
+<li class="chapter" data-level="2.1.2" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-2-design"><i class="fa fa-check"></i><b>2.1.2</b> Step 2: Design</a></li>
+<li class="chapter" data-level="2.1.3" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-3-recruitment"><i class="fa fa-check"></i><b>2.1.3</b> Step 3: Recruitment</a></li>
+<li class="chapter" data-level="2.1.4" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-4-distribution"><i class="fa fa-check"></i><b>2.1.4</b> Step 4: Distribution</a></li>
+<li class="chapter" data-level="2.1.5" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-5-execution"><i class="fa fa-check"></i><b>2.1.5</b> Step 5: Execution</a></li>
+<li class="chapter" data-level="2.1.6" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-6-observation"><i class="fa fa-check"></i><b>2.1.6</b> Step 6: Observation</a></li>
+<li class="chapter" data-level="2.1.7" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-7-compilation"><i class="fa fa-check"></i><b>2.1.7</b> Step 7: Compilation</a></li>
+<li class="chapter" data-level="2.1.8" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-8-analysis"><i class="fa fa-check"></i><b>2.1.8</b> Step 8: Analysis</a></li>
+<li class="chapter" data-level="2.1.9" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-9-feedback"><i class="fa fa-check"></i><b>2.1.9</b> Step 9: Feedback</a></li>
+<li class="chapter" data-level="2.1.10" data-path="introduction-to-the-tricot-approach.html"><a href="introduction-to-the-tricot-approach.html#step-10-evaluation"><i class="fa fa-check"></i><b>2.1.10</b> Step 10: Evaluation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="planning-a-tricot-experiment.html"><a href="planning-a-tricot-experiment.html"><i class="fa fa-check"></i><b>3</b> Planning a tricot experiment</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="planning-a-tricot-experiment.html"><a href="planning-a-tricot-experiment.html#problem-identification"><i class="fa fa-check"></i><b>3.1</b> Problem Identification</a></li>
+<li class="chapter" data-level="3.2" data-path="planning-a-tricot-experiment.html"><a href="planning-a-tricot-experiment.html#stakeholder-engagement"><i class="fa fa-check"></i><b>3.2</b> Stakeholder Engagement</a></li>
+<li class="chapter" data-level="3.3" data-path="planning-a-tricot-experiment.html"><a href="planning-a-tricot-experiment.html#resources-and-budgeting"><i class="fa fa-check"></i><b>3.3</b> Resources and Budgeting</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="standard-operaring-procedures.html"><a href="standard-operaring-procedures.html"><i class="fa fa-check"></i><b>4</b> Standard operaring procedures</a></li>
+<li class="chapter" data-level="5" data-path="socio-economic-sampling.html"><a href="socio-economic-sampling.html"><i class="fa fa-check"></i><b>5</b> Socio-economic sampling</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="socio-economic-sampling.html"><a href="socio-economic-sampling.html#assuring-experienced-participants"><i class="fa fa-check"></i><b>5.1</b> Assuring experienced participants</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="geographic-sampling.html"><a href="geographic-sampling.html"><i class="fa fa-check"></i><b>6</b> Geographic sampling</a></li>
+<li class="chapter" data-level="7" data-path="target-product-profiles.html"><a href="target-product-profiles.html"><i class="fa fa-check"></i><b>7</b> Target product profiles</a></li>
+<li class="chapter" data-level="8" data-path="climmob-software-suite.html"><a href="climmob-software-suite.html"><i class="fa fa-check"></i><b>8</b> ClimMob software suite</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="climmob-software-suite.html"><a href="climmob-software-suite.html#introduction-to-climmob"><i class="fa fa-check"></i><b>8.1</b> Introduction to ClimMob</a></li>
+<li class="chapter" data-level="8.2" data-path="climmob-software-suite.html"><a href="climmob-software-suite.html#data-collection-and-submission"><i class="fa fa-check"></i><b>8.2</b> Data collection and submission</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="implementation.html"><a href="implementation.html"><i class="fa fa-check"></i><b>9</b> Implementation</a></li>
+<li class="chapter" data-level="10" data-path="feedback-and-dissemination.html"><a href="feedback-and-dissemination.html"><i class="fa fa-check"></i><b>10</b> Feedback and dissemination</a></li>
+<li class="chapter" data-level="11" data-path="data-analysis.html"><a href="data-analysis.html"><i class="fa fa-check"></i><b>11</b> Data analysis</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="data-analysis.html"><a href="data-analysis.html#integrating-farmer-generated-data-and-agro-climatic-data-for-crop-variety-selection"><i class="fa fa-check"></i><b>11.1</b> Integrating farmer-generated data and agro-climatic data for crop variety selection”</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="data-analysis.html"><a href="data-analysis.html#correlation-between-overall-appreciation-and-the-other-traits"><i class="fa fa-check"></i><b>11.1.1</b> Correlation between overall appreciation and the other traits</a></li>
+<li class="chapter" data-level="11.1.2" data-path="data-analysis.html"><a href="data-analysis.html#performance-of-varieties-across-traits"><i class="fa fa-check"></i><b>11.1.2</b> Performance of varieties across traits</a></li>
+<li class="chapter" data-level="11.1.3" data-path="data-analysis.html"><a href="data-analysis.html#the-effect-of-rainfall-on-yield"><i class="fa fa-check"></i><b>11.1.3</b> The effect of rainfall on yield</a></li>
+<li class="chapter" data-level="11.1.4" data-path="data-analysis.html"><a href="data-analysis.html#reliability-of-superior-varieties"><i class="fa fa-check"></i><b>11.1.4</b> Reliability of superior varieties</a></li>
+<li class="chapter" data-level="11.1.5" data-path="data-analysis.html"><a href="data-analysis.html#going-beyond-yield"><i class="fa fa-check"></i><b>11.1.5</b> Going beyond yield</a></li>
+<li class="chapter" data-level="11.1.6" data-path="data-analysis.html"><a href="data-analysis.html#conclusion"><i class="fa fa-check"></i><b>11.1.6</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="stories.html"><a href="stories.html"><i class="fa fa-check"></i><b>12</b> Stories</a></li>
+<li class="chapter" data-level="13" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i><b>13</b> Appendices</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="appendices.html"><a href="appendices.html#on-farm-testing-protocol"><i class="fa fa-check"></i><b>13.1</b> On-farm testing protocol</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Product Use Testing in Agriculture</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-analysis" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Data analysis<a href="data-analysis.html#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="integrating-farmer-generated-data-and-agro-climatic-data-for-crop-variety-selection" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> Integrating farmer-generated data and agro-climatic data for crop variety selection”<a href="data-analysis.html#integrating-farmer-generated-data-and-agro-climatic-data-for-crop-variety-selection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this example, we demonstrate a possible workflow to assess crop variety performance using decentralized on-farm testing data generated with the tricot approach <span class="citation">(<a href="#ref-deSousa2024">de Sousa et al. 2024</a>)</span>. We use the <code>nicabean</code> dataset, which was generated with decentralized on-farm trials of common bean (<em>Phaseolus vulgaris</em> L.) varieties in Nicaragua over five seasons (between 2015 and 2016). Following the tricot approach, farmers tested three randomly assigned varieties of common bean on their farms as incomplete blocks of size three (from a set of 10 varieties). Farmers assessed which of the three varieties had the best and worst performance in eight traits (vigor, architecture, resistance to pests, resistance to diseases, tolerance to drought, yield, marketability, and taste). Additionally, farmers provided their overall appreciation of the varieties, i.e., which variety had the best and worst performance overall, considering all the traits.</p>
+<p>Here, we use the Plackett-Luce model, jointly proposed by Luce (1959) <span class="citation">(<a href="#ref-luce_individual_1959">Luce 1959</a>)</span> and Plackett (1975) <span class="citation">(<a href="#ref-Plackett">Plackett 1975</a>)</span>. This model estimates the probability of one variety outperforming all others (worth) for a given trait, based on Luce’s axiom <span class="citation">(<a href="#ref-luce_individual_1959">Luce 1959</a>)</span>. The model is implemented in R by Turner et al. (2020) with the PlackettLuce package <span class="citation">(<a href="#ref-Turner2020">Turner et al. 2020</a>)</span>.</p>
+<p>The <code>nicabean</code> dataset is a list with two data frames. The first, <code>trial</code>, contains trial data with farmers’ evaluations ranked from 1 to 3, with 1 being the highest-ranked variety and 3 the lowest-ranked variety for a given trait and incomplete block. These rankings were previously transformed from tricot rankings (where participants indicate the best and worst) to ordinal rankings using the function <code>rank_tricot()</code>. The second data frame, <code>covar</code>, contains the covariates associated with the on-farm trial plots and farmers. This example requires the PlackettLuce, climatrends, chirps, and ggplot2 packages.</p>
+<p>To begin the analysis, we transform the ordinal rankings into Plackett-Luce rankings (a sparse matrix) using the <code>rank_numeric()</code> function. We iterate over the traits and add the rankings to a list called R. Since the varieties are ranked in ascending order (1 being the highest and 3 the lowest), we use the argument <code>ascending = TRUE</code>.</p>
+<div id="correlation-between-overall-appreciation-and-the-other-traits" class="section level3 hasAnchor" number="11.1.1">
+<h3><span class="header-section-number">11.1.1</span> Correlation between overall appreciation and the other traits<a href="data-analysis.html#correlation-between-overall-appreciation-and-the-other-traits" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Using the function <code>kendallTau()</code>, we can compute the Kendall tau (<span class="math inline">\(\tau\)</span>) coefficient <span class="citation">(<a href="#ref-kendall_1938">Kendall 1938</a>)</span> to identify the correlation between farmers’ overall appreciation and the other traits in the trial. This approach can be used, for example, to assess the drivers of farmers’ choices or to prioritize traits for testing in the next stage of tricot trials (e.g., a simplified version of tricot with no more than four traits to assess). We use overall appreciation as the reference trait and compare the Kendall tau values with those of the other eight traits.</p>
+<p>The Kendall correlation indicates that farmers prioritized the traits yield (<span class="math inline">\(\tau\)</span> = 0.749), taste (<span class="math inline">\(\tau\)</span> = 0.653), and marketability (<span class="math inline">\(\tau\)</span> = 0.639) when assessing overall appreciation.</p>
+</div>
+<div id="performance-of-varieties-across-traits" class="section level3 hasAnchor" number="11.1.2">
+<h3><span class="header-section-number">11.1.2</span> Performance of varieties across traits<a href="data-analysis.html#performance-of-varieties-across-traits" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For each trait, we fit a Plackett-Luce model using the function <code>PlackettLuce()</code> from the package of the same name. This enables us to continue analyzing the trial data using other functions available in the gosset package.</p>
+<p>The <code>worth_map()</code> function provides a visual tool to assess and compare variety performance across different traits. The values represented in a worth map are <em>log-worth</em> estimates. From a breeder or product developer perspective, the function <code>worth_map()</code> is a valuable tool for identifying variety performance across multiple traits and selecting crossing materials.</p>
+</div>
+<div id="the-effect-of-rainfall-on-yield" class="section level3 hasAnchor" number="11.1.3">
+<h3><span class="header-section-number">11.1.3</span> The effect of rainfall on yield<a href="data-analysis.html#the-effect-of-rainfall-on-yield" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To examine the effect of climate factors on yield, we incorporate agro-climatic covariates into a Plackett-Luce tree model. For simplicity, we use total rainfall (Rtotal) derived from CHIRPS data <span class="citation">(<a href="#ref-Funk2015">Funk et al. 2015</a>)</span>, accessed in R through the <code>chirps</code> package <span class="citation">(<a href="#ref-chirps">de Sousa et al. 2020</a>)</span>. Additional covariates, such as temperature, can also be incorporated into a Plackett-Luce tree using packages like <code>ag5Tools</code> <span class="citation">(<a href="#ref-ag5tools">Brown and de Sousa 2022</a>)</span> or <code>nasapower</code> <span class="citation">(<a href="#ref-nasapower">Sparks 2018</a>)</span> as proposed by the studies of van Etten et al. (2019) <span class="citation">(<a href="#ref-vanEtten2019">van Etten et al. 2019</a>)</span>, de Sousa et al. (2021) <span class="citation">(<a href="#ref-deSousa2021">de Sousa et al. 2021</a>)</span> and Brown et al. (2022) <span class="citation">(<a href="#ref-Brown2022">Brown et al. 2022</a>)</span>.</p>
+<p>The CHIRPS data is requested via the <code>chirps</code> package, and the returned data should be formatted as a matrix. Note that this process may take several minutes to complete.</p>
+<p>We compute the rainfall indices for the period from the planting date to the first 45 days of plant growth using the <code>rainfall()</code> function from the climatrends package <span class="citation">(<a href="#ref-climatrends">de Sousa, van Etten, and Solberg 2020</a>)</span>.</p>
+<p>To link the rankings to covariates, they must be coerced into a ‘grouped_rankings’ object. This is done using the <code>group()</code> function from the PlackettLuce package. For this example, we retain only the rankings corresponding to yield.</p>
+<p>Now we fit a Plackett-Luce tree with the climate covariates.</p>
+<p>The following is an example of the plot generated using the <code>plot()</code> function in the gosset package. The functions <code>node_labels()</code>, <code>node_rules()</code>, and <code>top_items()</code> can be used to identify the splitting variables in the tree, the rules applied at each split, and the top-performing items in each node.</p>
+</div>
+<div id="reliability-of-superior-varieties" class="section level3 hasAnchor" number="11.1.4">
+<h3><span class="header-section-number">11.1.4</span> Reliability of superior varieties<a href="data-analysis.html#reliability-of-superior-varieties" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The function <code>reliability()</code> can be used to compute the reliability estimates <span class="citation">(<a href="#ref-eskridge_1992">Eskridge and Mumm 1992</a>)</span> of the evaluated common bean varieties in each of the resulting nodes of the Plackett-Luce tree. This helps identify varieties with a higher probability of outperforming a variety check (Amadeus 77). For simplicity, we present only the varieties with a reliability score <span class="math inline">\(\geq\)</span> 0.5.</p>
+<p>The results show that three varieties marginally outperform Amadeus 77 under drier growing conditions (Rtotal <span class="math inline">\(\leq\)</span> 193.82 mm), while two varieties demonstrate superior yield performance under higher rainfall conditions (Rtotal <span class="math inline">\(&gt;\)</span> 193.82 mm) compared to the reference. This approach is valuable for identifying superior varieties tailored to different target population of environments.</p>
+<p>For instance, the variety ALS 0532-6 exhibits weak performance in the overall yield ranking but outperforms all others in the subgroup with higher rainfall conditions. Combining rankings with socio-economic covariates could further enhance the identification of superior varieties for specific market segments, as proposed by Voss et al. (2024) <span class="citation">(<a href="#ref-Voss2024">Voss et al. 2024</a>)</span></p>
+</div>
+<div id="going-beyond-yield" class="section level3 hasAnchor" number="11.1.5">
+<h3><span class="header-section-number">11.1.5</span> Going beyond yield<a href="data-analysis.html#going-beyond-yield" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A more comprehensive approach to assessing the performance of varieties involves using “overall appreciation,” as this trait is expected to capture the performance of a variety not only for yield but also for all other traits prioritized by farmers. To support this hypothesis, we use the <code>compare()</code> function, which applies the method proposed by Bland and Altman (1986) <span class="citation">(<a href="#ref-MartinBland1986">Bland and Altman 1986</a>)</span> to assess the agreement between two different measures. Here, we compare overall appreciation and yield. If both measures completely agree, all the varieties should be centered at 0 on the Y-axis.</p>
+<p>The chart reveals no complete agreement between overall appreciation and yield. For instance, variety SX 14825-7-1 exhibits superior performance for overall appreciation compared to yield. By examining the <em>log-worth</em> estimates in the worth map, we can argue that the superior performance of this variety is likely influenced by traits such as taste, marketability, and disease resistance. However, these aspects were not captured when assessing yield alone.</p>
+</div>
+<div id="conclusion" class="section level3 hasAnchor" number="11.1.6">
+<h3><span class="header-section-number">11.1.6</span> Conclusion<a href="data-analysis.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This vignette demonstrates a detailed workflow for analyzing tricot data in the context of on-farm testing trials. By integrating farmers’ evaluations, agro-climatic covariates, and trait-specific performance metrics, the analysis provides valuable insights into the performance and adaptability of bean varieties across diverse environmental and socio-economic contexts.</p>
+<p>Key findings reveal that while yield remains a critical trait, other traits such as taste, marketability, and disease resistance significantly influence farmers’ overall appreciation of varieties. The use of Kendall correlation highlighted the traits most strongly associated with farmers’ preferences, while the worth maps and Plackett-Luce models provided a clear visualization of variety performance across traits. Furthermore, the analysis of rainfall effects using Plackett-Luce trees underscored the importance of agro-climatic factors in determining the relative performance of varieties, enabling the identification of genotype-by-environment interactions.</p>
+<p>The vignette also emphasizes the value of using “overall appreciation” as a comprehensive indicator of variety performance. Comparing this measure with yield alone demonstrated the limitations of focusing exclusively on yield, as traits such as taste and marketability can significantly enhance variety appeal.</p>
+<p>Finally, the reliability analysis and tree-based exploration of rainfall effects provide insights for breeding programs and product development. These tools enable researchers and practitioners to identify superior varieties tailored to specific target population of environments and market needs. By combining statistical rigor with participatory approaches, this workflow supports more effective and farmer-centric decision-making in crop improvement.</p>
+<p>This vignette illustrates how decentralized data, participatory methods, and advanced statistical models can work together to enhance breeding and selection strategies for common bean and other crops.</p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-MartinBland1986" class="csl-entry">
+Bland, J. Martin, and DouglasG. Altman. 1986. <span>“Statistical Methods for Assessing Agreement Between Two Methods of Clinical Measurement.”</span> <em>The Lancet</em> 327 (8476): 307–10. <a href="https://doi.org/10.1016/s0140-6736(86)90837-8">https://doi.org/10.1016/s0140-6736(86)90837-8</a>.
+</div>
+<div id="ref-Brown2022" class="csl-entry">
+Brown, David, Sytze de Bruin, Kauê de Sousa, Amílcar Aguilar, Mirna Barrios, Néstor Chaves, Marvin Gómez, et al. 2022. <span>“Rank‐based Data Synthesis of Common Bean on‐farm Trials Across Four Central American Countries.”</span> <em>Crop Science</em> 62 (6): 2246–66. <a href="https://doi.org/10.1002/csc2.20817">https://doi.org/10.1002/csc2.20817</a>.
+</div>
+<div id="ref-ag5tools" class="csl-entry">
+Brown, David, and Kauê de Sousa. 2022. <em>ag5Tools: Toolbox for Downloading and Extracting Copernicus AgERA5 Data</em>. <a href="https://agrdatasci.github.io/ag5Tools/">https://agrdatasci.github.io/ag5Tools/</a>.
+</div>
+<div id="ref-chirps" class="csl-entry">
+de Sousa, Kauê, Adam H. Sparks, William Ashmall, Jacob van Etten, and Svein Ø. Solberg. 2020. <span>“<span class="nocase">chirps: API Client for the CHIRPS Precipitation Data in R</span>.”</span> <em>The Journal of Open Source Software</em> 5 (51): 2419. <a href="https://doi.org/10.21105/joss.02419">https://doi.org/10.21105/joss.02419</a>.
+</div>
+<div id="ref-deSousa2024" class="csl-entry">
+de Sousa, Kauê, Jacob van Etten, Rhys Manners, Erna Abidin, Rekiya O. Abdulmalik, Bello Abolore, Kwabena Acheremu, et al. 2024. <span>“The <span class="nocase">tricot</span> Approach: An Agile Framework for Decentralized on-Farm Testing Supported by Citizen Science. A Retrospective.”</span> <em>Agronomy for Sustainable Development</em> 44 (1). <a href="https://doi.org/10.1007/s13593-023-00937-1">https://doi.org/10.1007/s13593-023-00937-1</a>.
+</div>
+<div id="ref-deSousa2021" class="csl-entry">
+de Sousa, Kauê, Jacob van Etten, Jesse Poland, Carlo Fadda, Jean-Luc Jannink, Yosef Gebrehawaryat Kidane, Basazen Fantahun Lakew, et al. 2021. <span>“Data-Driven Decentralized Breeding Increases Prediction Accuracy in a Challenging Crop Production Environment.”</span> <em>Communications Biology</em> 4 (1): 1–9.
+</div>
+<div id="ref-climatrends" class="csl-entry">
+de Sousa, Kauê, Jacob van Etten, and Svein Ø. Solberg. 2020. <em><span class="nocase">climatrends</span>: Climate Variability Indices for Ecological Modelling</em>. <a href="https://CRAN.R-project.org/package=climatrends">https://CRAN.R-project.org/package=climatrends</a>.
+</div>
+<div id="ref-eskridge_1992" class="csl-entry">
+Eskridge, K. M., and R. F. Mumm. 1992. <span>“Choosing Plant Cultivars Based on the Probability of Outperforming a Check.”</span> <em>Theoretical and Applied Genetics</em> 84 (3): 494–500. <a href="https://doi.org/10.1007/BF00229512">https://doi.org/10.1007/BF00229512</a>.
+</div>
+<div id="ref-Funk2015" class="csl-entry">
+Funk, Chris, Pete Peterson, Martin Landsfeld, Diego Pedreros, James Verdin, Shraddhanand Shukla, Gregory Husak, et al. 2015. <span>“<span class="nocase">The climate hazards infrared precipitation with stations—a new environmental record for monitoring extremes</span>.”</span> <em>Scientific Data</em> 2 (December): 150066. <a href="https://doi.org/10.1038/sdata.2015.66">https://doi.org/10.1038/sdata.2015.66</a>.
+</div>
+<div id="ref-kendall_1938" class="csl-entry">
+Kendall, M. G. 1938. <span>“<span class="nocase">A new measure of rank correlation</span>.”</span> <em>Biometrika</em> 30 (1-2): 81–93. <a href="https://doi.org/10.1093/biomet/30.1-2.81">https://doi.org/10.1093/biomet/30.1-2.81</a>.
+</div>
+<div id="ref-luce_individual_1959" class="csl-entry">
+Luce, R. Duncan. 1959. <em><span>Individual Choice Behavior</span></em>. Courier Corporation.
+</div>
+<div id="ref-Plackett" class="csl-entry">
+Plackett, R. L. 1975. <span>“<span class="nocase">The Analysis of Permutations</span>.”</span> <em>Journal of the Royal Statistical Society. Series C (Applied Statistics)</em> 24 (2): 193–202.
+</div>
+<div id="ref-nasapower" class="csl-entry">
+Sparks, Adam H. 2018. <span>“Nasapower: A NASA POWER Global Meteorology, Surface Solar Energy and Climatology Data Client for r.”</span> <em>The Journal of Open Source Software</em> 3 (30): 1035. <a href="https://doi.org/10.21105/joss.01035">https://doi.org/10.21105/joss.01035</a>.
+</div>
+<div id="ref-Turner2020" class="csl-entry">
+Turner, Heather L, Jacob van Etten, David Firth, and Ioannis Kosmidis. 2020. <span>“<span class="nocase">Modelling rankings in R: the PlackettLuce package</span>.”</span> <em>Computational Statistics</em>. <a href="https://doi.org/10.1007/s00180-020-00959-3">https://doi.org/10.1007/s00180-020-00959-3</a>.
+</div>
+<div id="ref-vanEtten2019" class="csl-entry">
+van Etten, Jacob, Kauê de Sousa, Amílcar Aguilar, Mirna Barrios, Allan Coto, Matteo Dell’Acqua, Carlo Fadda, et al. 2019. <span>“<span class="nocase">Crop variety management for climate adaptation supported by citizen science</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 116 (10): 4194–99. <a href="https://doi.org/10.1073/pnas.1813720116">https://doi.org/10.1073/pnas.1813720116</a>.
+</div>
+<div id="ref-Voss2024" class="csl-entry">
+Voss, Rachel C., Kauê de Sousa, Sognigbé N’Danikou, Abdul Shango, Lys Amavi Aglinglo, Marie-Angélique Laporte, Eric C. Legba, et al. 2024. <span>“Citizen Science Informs Demand-Driven Breeding of Opportunity Crops,”</span> July. <a href="https://doi.org/10.1101/2024.07.31.605211">https://doi.org/10.1101/2024.07.31.605211</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="feedback-and-dissemination.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="stories.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/07-data-analysis.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+# Implementation 
+
+Setting up experiments. For OFT, best practices in planting and maintaining the plots. For consumer testing, best practices in handling the samples. Preparing the packages for distribution.

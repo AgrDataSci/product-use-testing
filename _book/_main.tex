@@ -36,46 +36,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -119,25 +79,8 @@
 
 \title{Product Use Testing in Agriculture}
 \author{}
-\date{\vspace{-2.5em}2024-11-25}
+\date{\vspace{-2.5em}2024-11-26}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -151,179 +94,252 @@ Guide for user-centred testing in agriculture
 
 \chapter{Introduction to the tricot approach}\label{introduction-to-the-tricot-approach}
 
+\begin{quote}
+Jacob van Etten, Jonathan Steinke, Kauê de Sousa
+\end{quote}
+
 The \emph{tricot} approach (triadic comparison of technology options) is a participatory \citep{vanetten_tricot}, decentralized method where participants test three randomly assigned options on their use context. Using citizen science, it integrates participatory insights and site-specific data to guide breeding and agricultural innovation. Scalable and cost-effective, tricot empowers farmers and enhances crop diversity and resilience.
 
-\chapter{Cross-references}\label{cross}
+\section{The 10 steps of a tricot experiment}\label{the-10-steps-of-a-tricot-experiment}
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+\subsection{Step 1: Preparation}\label{step-1-preparation}
 
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}
+Researchers define a set of comparable technology options to test. For example, they decide to compare crop varieties with each other, or different fertilizer types, or irrigation technologies. They will provide the necessary materials (inputs or other) to project implementers (organizations that will reach farmers). Typically, about 8-12 technology options (comparable items) are included in the trial to be tested.
 
-There are two steps to cross-reference any heading:
+\subsection{Step 2: Design}\label{step-2-design}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+The implementing organization uses the ClimMob (climmob.net) free online software to design the project. This digital platform has been specifically created to manage tricot projects, from designing the experiment to data collection and analysis. The use of the digital platform streamlines the process. ClimMob offers the following benefits:
+1. ClimMob helps to avoid mistakes by introducing QR codes and electronic forms;
+2. ClimMob provides a dashboard to monitor progress;
+3. ClimMob reduces or eliminates the effort spent on digitalizing data collected on paper;
+4. ClimMob creates automatic reports with analytical results, avoiding the usual lengthy process of data cleaning and analysis;
+5. ClimMob provides clean, formatted data that can be easily downloaded for further analysis with existing tools, for example, combining with weather data.
+The tricot project will only work well if ClimMob is used from the very start and implementers are trained in its use. After designing the project, the implementers prepare trial packages, which include experimental quantities of three randomly selected technology options generated by the ClimMob platform.
+
+\subsection{Step 3: Recruitment}\label{step-3-recruitment}
+
+The implementers recruit dedicated farmers interested in improving their farming through the use of new technologies.
+
+\subsection{Step 4: Distribution}\label{step-4-distribution}
+
+Farmers are trained in the tricot approach and on how to collect data. Each farmer receives a trial package of three technologies to be tested.
+
+\subsection{Step 5: Execution}\label{step-5-execution}
+
+Farmers use their trial packages to apply the new technology options separately, on small plots next to each other, in a mini-trial on their own farm. To avoid any bias, they are not aware of the names of the crop varieties or other technology options they are testing. These are revealed to them only after the data has been collected.
+
+\subsection{Step 6: Observation}\label{step-6-observation}
+
+Every farmer is responsible for their own trial and makes various easy observations about their three options over the course of the season. For example: Which variety had the highest or the lowest yield? The farmers record these observations on an observation card.
+
+\subsection{Step 7: Compilation}\label{step-7-compilation}
+
+The local designated field agents collect and compile the observation data from the tricot farmers, either in person or by phone. They record the information digitally and send them on to the implementing organization. For this, they can use the free `ODK Collect' smartphone app, which is connected to the ClimMob software.
+
+\subsection{Step 8: Analysis}\label{step-8-analysis}
+
+The implementers compile and analyze the data from the trials, using the ClimMob online software, to identify which technology options showed the best performance and under which conditions.
+
+\subsection{Step 9: Feedback}\label{step-9-feedback}
+
+The implementers provide feedback to every participating farmer: the names of their three technology options, which options were most suited to their farm (out of the three options tried by them and out of all the options tried by farmers throughout the project), and where to obtain them.
+
+\subsection{Step 10: Evaluation}\label{step-10-evaluation}
+
+Tricot is an iterative process: after every project cycle, researchers, implementers and farmers collaboratively evaluate how the process may be improved in the next cycle.
+
+\chapter{Planning a tricot experiment}\label{planning-a-tricot-experiment}
+
+\section{Problem Identification}\label{problem-identification}
+
+\begin{itemize}
 \tightlist
 \item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
+  Defining research questions and objectives.
 \item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+  Understanding the target farming system.
+\end{itemize}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \hyperref[cross]{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
+\section{Stakeholder Engagement}\label{stakeholder-engagement}
 
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}
+\begin{itemize}
+\tightlist
+\item
+  Roles of researchers, extension agents, local facilitators, and farmers.
+\item
+  Building partnerships (e.g., with NGOs, genebanks, seed companies).
+\end{itemize}
 
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+\section{Resources and Budgeting}\label{resources-and-budgeting}
 
-See Figure \ref{fig:nice-fig}.
+\begin{itemize}
+\tightlist
+\item
+  Required materials (e.g., seeds, observation tools, digital platforms).
+\item
+  Time and financial planning.
+\end{itemize}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\chapter{Standard operaring procedures}\label{standard-operaring-procedures}
 
-\begin{figure}
+\begin{quote}
+Marie-Angélique Laporte, Almendra Cremaschi
+\end{quote}
 
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
+An experimental protocol provides a standardised overview of the basic information that will be collected during a crop tricot trial. The protocol provides an overview of the data collection moments during the trials and the variables and traits collected at each data collection moment. Farmers evaluate varieties in their on-farm trials and provide comparative observations by ranking the varieties based on their performance throughout their growth and post-harvest qualities including taste and consumption preferences.
 
-}
+\chapter{Socio-economic sampling}\label{socio-economic-sampling}
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\begin{quote}
+Béla Teeken, Jill Cairns
+\end{quote}
 
-Don't miss Table \ref{tab:nice-tab}.
+\section{Assuring experienced participants}\label{assuring-experienced-participants}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+A common weakness in standard participatory variety selections is that farmers are chosen without eye for their experience and the specific work they are doing and to which local social category they belong. Where this is considered usually very broad general categories are used such as age and sex., occupation, level of education, farm size. Furthermore, when gender is brought in focus, the practice is mainly on having both men and women farmers in equal numbers evaluating the trials, disregarding their specific expertise or experience in farming. Another problem is that often farmers get chosen who feel comfortable talking and interacting within the sphere of a scientific evaluation, which emphasizes experience in reasoning and talking. This often excludes very skilled persons that however are not able or are normatively not allowed to communicate these skills and knowledge through language. But even if the respondent is good at talking it still does not include the tacit knowledge, the embodied skill and knowledge that people have. Breeders are however interested in detailed concrete hands-on information if they want to align with a demand led breeding approach such as the stage gate breeding approach that is now introduced in the CGIAR public sector breeding. Within the current reform to a stage gate breeding approach it is also crucial to get feedback from not only farmers but also processors/prepares and marketers who turn the RTB crop into an edible quality food product.
 
-\begin{table}
+To overcome these issues while choosing the TRICOT participants, we therefore work with a so-called purposive sampling using a task group approach with an explicit gender dimension. This gender dimension is not only important within the light of gender equity but is also very practical and concrete if we want to know the expertise and experience people have with regards to work related to the RTB corps because often tasks related to the RTB crop are gendered: certain tasks are often carried out be a specific sex. Important to note here is that a task group is not necessarily a group that works together but a category of people of the same social segment that carry out similar tasks related to the crop.
+A task group approach is also in line with a much more performative way of participation instead of only a deliberative one (Richards, 2007) . In such a performative approach people who are verbally not strong or are not allowed to speak up are included and approached more self-evidently and tacitly, because they have been identified as a specific task group within a locally defined and thus relevant social group or intersection of different groups.
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+From a demand led perspective breeders are interested in good information on the suitability of improved varieties within the livelihoods of the users and therefore want to know the user preferred crop characteristics. To get good information it is therefore important to get this from experienced people that are skilled in farming but also with regards to processing of the crop into the food products and their quality as well as the marketing of the crop. Importantly storability of food products as well as fresh roots tubers and bananas are important in the last instance. E.g if men are are hardly involved into processing cassava into gari , a breeder will not be interested much in men's preferences with relation to processing because they will not always be able to give correct hands on experience-based knowledge because they do not possess the skill. Men in this case might have indirect knowledge about it (e.g.~through their spouses), but certainly not the embodied skills.
 
-\chapter{Parts}\label{parts}
+A bad example of how participants got chosen is a farce case where someone wanted to work with mango farmers and ended up with only male participants of which non had a mango tree field. When later confronting these participants with this, the village chief and his friends all claimed to have a mango tree in their backyard. It is obvious that a tricot with such participants will not yield the best information.
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1166}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1300}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0830}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1883}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1211}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1256}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.0942}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1413}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Locally Relevant Social Group*
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Share of Local Population (oral or record share) {[}B1.4a{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Language (record language) {[}B1.4b{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Associated Livelihood(s) or Crops {[}B1.4c{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tasks Related to Cassava (Women)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tasks Related to Cassava (Men)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Better Off Group(s)? (Yes=1, No=2) {[}B1.4d{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Politically Active \& Influential Group(s)? (Yes=1, No=2) {[}B1.4e{]}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+i. Ilaje (originally from Ondo state) & 1000 & Yoruba dialect & Fishing, selling of fish & & & 2 & 2 \\
+ii. Agatu (Immigrants from Benue state) & 500 & Agatu & Farming (subsistence and cash crops), farm labourer. Includes cassava & Farming (weeding, harvesting), processing, marketing & Farming (weeding, planting, harvesting), marketing of fresh roots & 2 & 2 \\
+iii. Markurdi (Immigrants from Benue state) & 100 & Tiv/Igede & Farming (subsistence and cash crops), farm labourer. Includes cassava & Farming (weeding), processing, marketing & Farming, marketing of fresh roots & 2 & 2 \\
+iv. Hausa & 10 & Hausa & Trading, fishing & & & 2 & 2 \\
+v. Cotonou (Immigrants from Benin republic) & 50 & Fon/Ewe & Farming (subsistence and cash crops), particularly cultivate vegetables, tomatoes, and peppers. Includes cassava & Farming (planting, weeding), processing, marketing & Farming and occasional processing & 2 & 2 \\
+vii. Fulani & 150 & Fulfulde & Cattle rearing & & & 2 & 2 \\
+viii. Yoruba & 18145 & Yoruba & Farming (food and cash crops), trading. Includes cassava & More of processing, some farming (weeding), firm marketing & Farming, marketing of fresh roots & 1 & 1 \\
+\end{longtable}
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\chapter{Geographic sampling}\label{geographic-sampling}
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\begin{quote}
+Joost van Heerwaarden, Jacob van Etten
+\end{quote}
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+\chapter{Target product profiles}\label{target-product-profiles}
 
-\chapter{Footnotes and citations}\label{footnotes-and-citations}
+\chapter{ClimMob software suite}\label{climmob-software-suite}
 
-\section{Footnotes}\label{footnotes}
+\begin{quote}
+Brandon Madriz, MrBot Software
+\end{quote}
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+\section{Introduction to ClimMob}\label{introduction-to-climmob}
 
-\section{Citations}\label{citations}
+\section{Data collection and submission}\label{data-collection-and-submission}
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\chapter{Implementation}\label{implementation}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+Setting up experiments. For OFT, best practices in planting and maintaining the plots. For consumer testing, best practices in handling the samples. Preparing the packages for distribution.
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+\chapter{Feedback and dissemination}\label{feedback-and-dissemination}
 
-\chapter{Blocks}\label{blocks}
+Feedback session to participants. Follow up and reporting.
 
-\section{Equations}\label{equations}
+\chapter{Data analysis}\label{data-analysis}
 
-Here is an equation.
+\section{Integrating farmer-generated data and agro-climatic data for crop variety selection''}\label{integrating-farmer-generated-data-and-agro-climatic-data-for-crop-variety-selection}
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+In this example, we demonstrate a possible workflow to assess crop variety performance using decentralized on-farm testing data generated with the tricot approach \citep{deSousa2024}. We use the \texttt{nicabean} dataset, which was generated with decentralized on-farm trials of common bean (\emph{Phaseolus vulgaris} L.) varieties in Nicaragua over five seasons (between 2015 and 2016). Following the tricot approach, farmers tested three randomly assigned varieties of common bean on their farms as incomplete blocks of size three (from a set of 10 varieties). Farmers assessed which of the three varieties had the best and worst performance in eight traits (vigor, architecture, resistance to pests, resistance to diseases, tolerance to drought, yield, marketability, and taste). Additionally, farmers provided their overall appreciation of the varieties, i.e., which variety had the best and worst performance overall, considering all the traits.
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+Here, we use the Plackett-Luce model, jointly proposed by Luce (1959) \citep{luce_individual_1959} and Plackett (1975) \citep{Plackett}. This model estimates the probability of one variety outperforming all others (worth) for a given trait, based on Luce's axiom \citep{luce_individual_1959}. The model is implemented in R by Turner et al.~(2020) with the PlackettLuce package \citep{Turner2020}.
 
-\section{Theorems and proofs}\label{theorems-and-proofs}
+The \texttt{nicabean} dataset is a list with two data frames. The first, \texttt{trial}, contains trial data with farmers' evaluations ranked from 1 to 3, with 1 being the highest-ranked variety and 3 the lowest-ranked variety for a given trait and incomplete block. These rankings were previously transformed from tricot rankings (where participants indicate the best and worst) to ordinal rankings using the function \texttt{rank\_tricot()}. The second data frame, \texttt{covar}, contains the covariates associated with the on-farm trial plots and farmers. This example requires the PlackettLuce, climatrends, chirps, and ggplot2 packages.
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+To begin the analysis, we transform the ordinal rankings into Plackett-Luce rankings (a sparse matrix) using the \texttt{rank\_numeric()} function. We iterate over the traits and add the rankings to a list called R. Since the varieties are ranked in ascending order (1 being the highest and 3 the lowest), we use the argument \texttt{ascending\ =\ TRUE}.
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+\subsection{Correlation between overall appreciation and the other traits}\label{correlation-between-overall-appreciation-and-the-other-traits}
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+Using the function \texttt{kendallTau()}, we can compute the Kendall tau (\(\tau\)) coefficient \citep{kendall_1938} to identify the correlation between farmers' overall appreciation and the other traits in the trial. This approach can be used, for example, to assess the drivers of farmers' choices or to prioritize traits for testing in the next stage of tricot trials (e.g., a simplified version of tricot with no more than four traits to assess). We use overall appreciation as the reference trait and compare the Kendall tau values with those of the other eight traits.
 
-\section{Callout blocks}\label{callout-blocks}
+The Kendall correlation indicates that farmers prioritized the traits yield (\(\tau\) = 0.749), taste (\(\tau\) = 0.653), and marketability (\(\tau\) = 0.639) when assessing overall appreciation.
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\subsection{Performance of varieties across traits}\label{performance-of-varieties-across-traits}
 
-\chapter{Sharing your book}\label{sharing-your-book}
+For each trait, we fit a Plackett-Luce model using the function \texttt{PlackettLuce()} from the package of the same name. This enables us to continue analyzing the trial data using other functions available in the gosset package.
 
-\section{Publishing}\label{publishing}
+The \texttt{worth\_map()} function provides a visual tool to assess and compare variety performance across different traits. The values represented in a worth map are \emph{log-worth} estimates. From a breeder or product developer perspective, the function \texttt{worth\_map()} is a valuable tool for identifying variety performance across multiple traits and selecting crossing materials.
 
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+\subsection{The effect of rainfall on yield}\label{the-effect-of-rainfall-on-yield}
 
-\section{404 pages}\label{pages}
+To examine the effect of climate factors on yield, we incorporate agro-climatic covariates into a Plackett-Luce tree model. For simplicity, we use total rainfall (Rtotal) derived from CHIRPS data \citep{Funk2015}, accessed in R through the \texttt{chirps} package \citep{chirps}. Additional covariates, such as temperature, can also be incorporated into a Plackett-Luce tree using packages like \texttt{ag5Tools} \citep{ag5tools} or \texttt{nasapower} \citep{nasapower} as proposed by the studies of van Etten et al.~(2019) \citep{vanEtten2019}, de Sousa et al.~(2021) \citep{deSousa2021} and Brown et al.~(2022) \citep{Brown2022}.
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+The CHIRPS data is requested via the \texttt{chirps} package, and the returned data should be formatted as a matrix. Note that this process may take several minutes to complete.
 
-\section{Metadata for sharing}\label{metadata-for-sharing}
+We compute the rainfall indices for the period from the planting date to the first 45 days of plant growth using the \texttt{rainfall()} function from the climatrends package \citep{climatrends}.
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+To link the rankings to covariates, they must be coerced into a `grouped\_rankings' object. This is done using the \texttt{group()} function from the PlackettLuce package. For this example, we retain only the rankings corresponding to yield.
 
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+Now we fit a Plackett-Luce tree with the climate covariates.
 
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+The following is an example of the plot generated using the \texttt{plot()} function in the gosset package. The functions \texttt{node\_labels()}, \texttt{node\_rules()}, and \texttt{top\_items()} can be used to identify the splitting variables in the tree, the rules applied at each split, and the top-performing items in each node.
 
-Read more about the features of this output format here:
+\subsection{Reliability of superior varieties}\label{reliability-of-superior-varieties}
 
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+The function \texttt{reliability()} can be used to compute the reliability estimates \citep{eskridge_1992} of the evaluated common bean varieties in each of the resulting nodes of the Plackett-Luce tree. This helps identify varieties with a higher probability of outperforming a variety check (Amadeus 77). For simplicity, we present only the varieties with a reliability score \(\geq\) 0.5.
 
-Or use:
+The results show that three varieties marginally outperform Amadeus 77 under drier growing conditions (Rtotal \(\leq\) 193.82 mm), while two varieties demonstrate superior yield performance under higher rainfall conditions (Rtotal \(>\) 193.82 mm) compared to the reference. This approach is valuable for identifying superior varieties tailored to different target population of environments.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
+For instance, the variety ALS 0532-6 exhibits weak performance in the overall yield ranking but outperforms all others in the subgroup with higher rainfall conditions. Combining rankings with socio-economic covariates could further enhance the identification of superior varieties for specific market segments, as proposed by Voss et al.~(2024) \citep{Voss2024}
 
+\subsection{Going beyond yield}\label{going-beyond-yield}
+
+A more comprehensive approach to assessing the performance of varieties involves using ``overall appreciation,'' as this trait is expected to capture the performance of a variety not only for yield but also for all other traits prioritized by farmers. To support this hypothesis, we use the \texttt{compare()} function, which applies the method proposed by Bland and Altman (1986) \citep{MartinBland1986} to assess the agreement between two different measures. Here, we compare overall appreciation and yield. If both measures completely agree, all the varieties should be centered at 0 on the Y-axis.
+
+The chart reveals no complete agreement between overall appreciation and yield. For instance, variety SX 14825-7-1 exhibits superior performance for overall appreciation compared to yield. By examining the \emph{log-worth} estimates in the worth map, we can argue that the superior performance of this variety is likely influenced by traits such as taste, marketability, and disease resistance. However, these aspects were not captured when assessing yield alone.
+
+\subsection{Conclusion}\label{conclusion}
+
+This vignette demonstrates a detailed workflow for analyzing tricot data in the context of on-farm testing trials. By integrating farmers' evaluations, agro-climatic covariates, and trait-specific performance metrics, the analysis provides valuable insights into the performance and adaptability of bean varieties across diverse environmental and socio-economic contexts.
+
+Key findings reveal that while yield remains a critical trait, other traits such as taste, marketability, and disease resistance significantly influence farmers' overall appreciation of varieties. The use of Kendall correlation highlighted the traits most strongly associated with farmers' preferences, while the worth maps and Plackett-Luce models provided a clear visualization of variety performance across traits. Furthermore, the analysis of rainfall effects using Plackett-Luce trees underscored the importance of agro-climatic factors in determining the relative performance of varieties, enabling the identification of genotype-by-environment interactions.
+
+The vignette also emphasizes the value of using ``overall appreciation'' as a comprehensive indicator of variety performance. Comparing this measure with yield alone demonstrated the limitations of focusing exclusively on yield, as traits such as taste and marketability can significantly enhance variety appeal.
+
+Finally, the reliability analysis and tree-based exploration of rainfall effects provide insights for breeding programs and product development. These tools enable researchers and practitioners to identify superior varieties tailored to specific target population of environments and market needs. By combining statistical rigor with participatory approaches, this workflow supports more effective and farmer-centric decision-making in crop improvement.
+
+This vignette illustrates how decentralized data, participatory methods, and advanced statistical models can work together to enhance breeding and selection strategies for common bean and other crops.
+
+\chapter{Stories}\label{stories}
+
+\chapter{Appendices}\label{appendices}
+
+\section{On-farm testing protocol}\label{on-farm-testing-protocol}
 
   \bibliography{book.bib,packages.bib}
 
